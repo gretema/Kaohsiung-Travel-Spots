@@ -7,6 +7,7 @@
 - 採用純 JavaScript AJAX / JSON 串接政府開放資料 API。
 - 網頁樣式使用純 CSS 手刻。
 - [設計稿](https://hexschool.github.io/JavaScript_HomeWork/#artboard3)
+- [網頁 DEMO](https://gretema.github.io/Kaohsiung-Travel-Spots/)
 
 ## Clone Project
 
