@@ -45,20 +45,19 @@ xhr.onload = function() {
     let content = "";
     document.querySelector(".error").textContent = "";
     for (let i = 0; i < backdataArr.length; i++) {
-      content +=
-        '<li class="spotlist"><div class="picbox"><img src="' +
-        backdataArr[i].Picture1 +
-        '"></div><p class="spotName">' +
-        backdataArr[i].Name +
-        '</p><div class="spotInfo"><span class="opentime_icon"></span><p class="opentime">' +
-        backdataArr[i].Opentime +
-        '</p><br><span class="address_icon"></span><p class="address">' +
-        backdataArr[i].Add +
-        '</p><br><span class="tel_icon"></span><p class="tel">' +
-        backdataArr[i].Tel +
-        '</p><br><span class="ticket_icon"></span><p class="ticket">' +
-        backdataArr[i].Ticketinfo +
-        "</p></div></li>";
+      content += `<li class="spotlist"><div class="picbox"><img src="
+        ${backdataArr[i].Picture1}
+        "></div><p class="spotName">
+        ${backdataArr[i].Name}
+        </p><div class="spotInfo"><span class="opentime_icon"></span><p class="opentime">
+        ${backdataArr[i].Opentime}
+        </p><br><span class="address_icon"></span><p class="address">
+        ${backdataArr[i].Add}
+        </p><br><span class="tel_icon"></span><p class="tel">
+        ${backdataArr[i].Tel}
+        </p><br><span class="ticket_icon"></span><p class="ticket">
+        ${backdataArr[i].Ticketinfo}
+        </p></div></li>`;
     }
     list.innerHTML = content;
   } else {
@@ -79,20 +78,19 @@ function spotsdata(e) {
     document.querySelector(".error").textContent = "";
     for (let i = 0; i < backdataArr.length; i++) {
       if (select == backdataArr[i].Zone) {
-        content +=
-          '<li class="spotlist"><div class="picbox"><img src="' +
-          backdataArr[i].Picture1 +
-          '"></div><p class="spotName">' +
-          backdataArr[i].Name +
-          '</p><div class="spotInfo"><span class="opentime_icon"></span><p class="opentime">' +
-          backdataArr[i].Opentime +
-          '</p><br><span class="address_icon"></span><p class="address">' +
-          backdataArr[i].Add +
-          '</p><br><span class="tel_icon"></span><p class="tel">' +
-          backdataArr[i].Tel +
-          '</p><br><span class="ticket_icon"></span><p class="ticket">' +
-          backdataArr[i].Ticketinfo +
-          "</p></div></li>";
+        content += `<li class="spotlist"><div class="picbox"><img src="
+        ${backdataArr[i].Picture1}
+        "></div><p class="spotName">
+        ${backdataArr[i].Name}
+        </p><div class="spotInfo"><span class="opentime_icon"></span><p class="opentime">
+        ${backdataArr[i].Opentime}
+        </p><br><span class="address_icon"></span><p class="address">
+        ${backdataArr[i].Add}
+        </p><br><span class="tel_icon"></span><p class="tel">
+        ${backdataArr[i].Tel}
+        </p><br><span class="ticket_icon"></span><p class="ticket">
+        ${backdataArr[i].Ticketinfo}
+        </p></div></li>`;
       }
     }
     listTitle.innerHTML = select;
